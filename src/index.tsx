@@ -4,6 +4,7 @@ import "./style.css";
 export function App() {
   return (
     <div className="w-screen h-screen p-4 bg-black text-neutral-200 flex flex-col gap-6">
+      {/* Top Bar */}
       <div
         className="h-14 px-4 flex items-center justify-between
                    border border-neutral-800 rounded-xl
@@ -25,8 +26,11 @@ export function App() {
         </div>
       </div>
 
-      <div className="flex-1 flex gap-6 overflow-auto">
+      {/* Main Content */}
+      <div className="flex flex-col md:flex-row gap-6 flex-1 overflow-auto">
+        {/* Left Column (Main Info) */}
         <div className="flex-1 flex flex-col gap-6">
+          {/* About Section */}
           <section
             className="p-6 flex flex-col gap-y-3 border border-dashed border-neutral-800 rounded-xl
                        bg-black/50 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.03)]"
@@ -50,6 +54,7 @@ export function App() {
             </p>
           </section>
 
+          {/* Skills */}
           <section
             className="p-6 border border-dashed border-neutral-800 rounded-xl
                        bg-black/50 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.03)]"
@@ -76,12 +81,12 @@ export function App() {
             <p className="mt-4 text-xs text-neutral-500">* current focus</p>
           </section>
 
+          {/* Education */}
           <section
             className="p-6 border border-dashed border-neutral-800 rounded-xl
                        bg-black/50 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.03)]"
           >
             <h2 className="space text-xl font-semibold mb-4">Education</h2>
-
             <div className="flex flex-col gap-4">
               <div>
                 <h3 className="space text-lg font-medium">
@@ -126,7 +131,9 @@ export function App() {
           </section>
         </div>
 
-        <div className="w-1/3 flex flex-col gap-6">
+        {/* Right Column (Sidebar) */}
+        <div className="flex flex-col gap-6 md:w-1/3 w-full">
+          {/* Competitions & Awards */}
           <section
             className="p-6 border border-dashed border-neutral-800 rounded-xl
                        bg-black/50 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.03)]"
@@ -141,6 +148,7 @@ export function App() {
             </ul>
           </section>
 
+          {/* Projects */}
           <section
             className="p-6 border border-dashed border-neutral-800 rounded-xl
                        bg-black/50 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.03)] flex flex-col gap-4"
@@ -150,11 +158,11 @@ export function App() {
               {[
                 {
                   name: "Bambu Labs Printer Local API",
-                  desc: "Developed an interface for communicating with Bambu Labs 3D printers in Golang. This was the first library of its kind made in Golang and has recieved lots of support and contributions from the open-source community.",
+                  desc: "Developed an interface for communicating with Bambu Labs 3D printers in Golang. This was the first library of its kind made in Golang and has received lots of support and contributions from the open-source community.",
                 },
                 {
                   name: "Realtime Speech Emotion Recognition for the Deaf and Hearing-Impaired",
-                  desc: "Created a model and edge application that performs realtime SER on computer audio. Made primarily in Python and submitted to TSA state competiton in 2026 where it recieved [pending] place.",
+                  desc: "Created a model and edge application that performs realtime SER on computer audio. Made primarily in Python and submitted to TSA state competition in 2026 where it received [pending] place.",
                 },
               ].map((project) => (
                 <div
@@ -174,14 +182,16 @@ export function App() {
           </section>
         </div>
       </div>
+
+      {/* Footer */}
       <footer
         className="p-4 mt-auto border border-neutral-800 rounded-xl
-                   bg-black/50 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.03)] flex justify-between items-center"
+                   bg-black/50 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.03)] flex justify-between items-center flex-wrap gap-2"
       >
         <span className="text-sm text-neutral-400">
           © {new Date().getFullYear()} Torben Conto
         </span>
-        <div className="flex gap-4 text-neutral-500 text-sm">
+        <div className="flex gap-4 text-neutral-500 text-sm flex-wrap">
           <a href="mailto:torbenmconto@gmail.com">Email</a>
           <a href="https://github.com/torbenconto" target="_blank">
             GitHub
