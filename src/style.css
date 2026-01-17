@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.plex {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.space {
+    font-family: "Space Grotesk", sans-serif;
+}
