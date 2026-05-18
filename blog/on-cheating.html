@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>on cheating - torben.sh</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style>
+            body {
+                font-family: "IBM Plex Mono", monospace;
+            }
+            .font-dm {
+                font-family: "DM Mono", monospace;
+            }
+            .link-item {
+                font-family: "IBM Plex Mono", monospace;
+                font-size: 11px;
+                color: #a5a3a0;
+                text-decoration: none;
+                letter-spacing: 0.08em;
+                transition: color 0.15s;
+                display: flex;
+                align-items: center;
+            }
+            .link-item::before {
+                content: "_";
+                opacity: 0;
+                margin-right: 2px;
+                transition: opacity 0.15s;
+            }
+            .link-item:hover::before {
+                opacity: 1;
+            }
+            .link-item:hover {
+                color: #1a1816;
+            }
+            .prose p {
+                font-size: 13px;
+                line-height: 1.9;
+                color: #3a3835;
+                margin-bottom: 1.4em;
+            }
+            .prose h2 {
+                font-family: "DM Mono", monospace;
+                font-size: 16px;
+                font-weight: 300;
+                color: #1a1816;
+                margin-top: 2.5em;
+                margin-bottom: 0.8em;
+                letter-spacing: -0.01em;
+            }
+            .prose code {
+                font-size: 12px;
+                background: rgba(0, 0, 0, 0.05);
+                padding: 2px 6px;
+                border-radius: 2px;
+                color: #1a1816;
+            }
+            .prose pre {
+                background: rgba(0, 0, 0, 0.04);
+                border: 0.5px solid rgba(0, 0, 0, 0.08);
+                border-radius: 2px;
+                padding: 16px;
+                overflow-x: auto;
+                margin-bottom: 1.4em;
+            }
+            .prose img {
+                width: 100%;
+                height: auto;
+                display: block;
+
+                margin-bottom: 32px;
+                margin-top: 12px;
+
+                border-radius: 3px;
+                border: 0.5px solid rgba(0, 0, 0, 0.08);
+
+                background: rgba(0, 0, 0, 0.03);
+
+                transition:
+                    transform 0.2s ease,
+                    border-color 0.2s ease;
+            }
+
+            .prose img:hover {
+                border-color: rgba(0, 0, 0, 0.14);
+            }
+
+            .prose figure {
+                margin: 2.4em 0;
+            }
+
+            .prose figcaption {
+                font-size: 11px;
+                line-height: 1.7;
+                color: #a5a3a0;
+                margin-top: 0.8em;
+                text-align: center;
+                letter-spacing: 0.02em;
+            }
+            .prose pre code {
+                background: none;
+                padding: 0;
+                font-size: 12px;
+                line-height: 1.7;
+            }
+            .prose a {
+                color: #1a1816;
+                text-decoration: underline;
+                text-underline-offset: 3px;
+                text-decoration-color: rgba(0, 0, 0, 0.25);
+                transition: text-decoration-color 0.15s;
+            }
+            .prose a:hover {
+                text-decoration-color: rgba(0, 0, 0, 0.7);
+            }
+        </style>
+    </head>
+    <body class="bg-[#f5f4f0] text-[#1a1816] min-h-screen flex flex-col">
+        <main
+            class="flex-1 flex flex-col px-10 md:px-20 lg:px-32 py-16 max-w-4xl w-full"
+        >
+            <a href="/blog/" class="link-item mb-16 inline-flex">← writing</a>
+
+            <div class="mb-10">
+                <h1
+                    class="font-dm font-light text-4xl md:text-5xl tracking-tight leading-tight mb-4"
+                >
+                    on cheating
+                </h1>
+                <span class="text-[11px] text-[#a5a3a0] tabular-nums"
+                    >2026-05-18</span
+                >
+            </div>
+
+            <div class="border-t border-black/[0.07] mb-6"></div>
+
+            <div class="prose max-w-2xl">
+                <img src="/img/cheat-thumb.svg" />
+                <p>
+                    Cheating is treated as an unusually taboo topic across the
+                    internet. In many communities, anything perceived as even
+                    remotely “cheating-adjacent” is met with immediate
+                    hostility, regardless of the context or technical value
+                    behind it.
+                </p>
+
+                <p>
+                    This phenomenon has always interested me. Nearly everyone
+                    proclaims their disdain for cheaters, yet millions upon
+                    millions of people engage with various forms of unfair
+                    advantages every day.
+                </p>
+
+                <p>
+                    A possible explanation for this paradox is a kind of
+                    selective indifference toward one's own behavior. Many of
+                    those who vehemently express their hatred for people who
+                    seek unfair advantages are often not so “clean” themselves.
+                    This distinction is rarely examined because society is full
+                    of small, normalized advantages that sit in a grey area.
+                </p>
+
+                <p>
+                    In reality, people routinely engage in these advantages:
+                    exploiting systemic loopholes, selectively interpreting
+                    rules and guidelines, leveraging unequal information, or
+                    relying on resources that are technically allowed but not
+                    realistically accessible to their competition. Success,
+                    regardless of context, is often defined by how effectively
+                    someone can navigate these asymmetries.
+                </p>
+
+                <p>
+                    I like to examine politicians to demonstrate this, as they
+                    tend to represent the extreme of this advantage-seeking
+                    behavior. The same kind of behavior that is so easily
+                    condemned in abstract discussion (or moral thought
+                    experiments) often reappears in political systems, just
+                    scaled up and justified through “necessity.”
+                </p>
+
+                <p>
+                    People often assume a clear divide between “good actors” and
+                    “bad actors” in politics, but in reality most decisions are
+                    made under pressure: incentives, loyalty, self-preservation,
+                    and affiliation all compete with perceived moral obligation
+                    (the source of which is often irrelevant in practice).
+                </p>
+
+                <p>
+                    A useful example of this is a variation of the trolley
+                    problem where a person must choose between saving a family
+                    member or a larger group of strangers. In theoretical
+                    discussions, many claim that they would choose the
+                    utilitarian option and save the greater number of lives. But
+                    in practice, where the stakes are real and immediate, most
+                    people will intuitively prioritize the person with whom they
+                    have a close personal connection.
+                </p>
+
+                <p>
+                    The point of this examination is not to condemn the action,
+                    but to reveal the gap between how people describe their
+                    decision-making framework and what actually drives their
+                    decisions under pressure. Humans are not impartial, and our
+                    biological nature will often override whatever
+                    self-conception we may hold of ourselves.
+                </p>
+
+                <p>
+                    Returning to the political metaphor, what people label as
+                    corruption or hypocrisy in politicians can be interpreted
+                    less as an exception to human nature and more as its logical
+                    extension. People often fail to recognize that, when placed
+                    under similar conditions, many of the decisions they are
+                    quick to criticize would likely be the same ones they
+                    themselves would make.
+                </p>
+
+                <p>
+                    People are reluctant to imagine themselves making the same
+                    decisions they view as indefensible, even when those
+                    decisions arise from pressures they consistently operate
+                    under.
+                </p>
+
+                <p>
+                    Once this gap between self-perception and actual behavior is
+                    acknowledged, it becomes easier to understand why cheating
+                    in games is such a revealing case study: it makes incentive
+                    structures explicit and removes much of the moral ambiguity
+                    found in real-world systems.
+                </p>
+
+                <p>
+                    Cheating in games has therefore become a socially safe
+                    target. It is easy to label cheating as unacceptable because
+                    the rules are explicit, but much harder to apply the same
+                    scrutiny to one’s own behavior in contexts where
+                    advantage-seeking is normalized.
+                </p>
+
+                <p>
+                    This societal contempt risks flattening a technically rich
+                    domain into a purely moral one. “Cheating” becomes a label
+                    that ends discussion rather than a subject that invites
+                    analysis, making it difficult to examine what is actually
+                    happening beneath the surface.
+                </p>
+
+                <p>
+                    From a programming perspective, this divide is obvious. What
+                    is socially categorized as cheating is, in practice, an
+                    interesting and technically demanding problem space. When
+                    you move beyond the social framing, you uncover a set of
+                    engineering problems involving system behavior, constraints,
+                    and unintended interactions.
+                </p>
+
+                <p>
+                    My experience has made it difficult to accept the default
+                    framing of cheating as something purely illegitimate or
+                    “wrong,” and I think that as a programmer, you should be
+                    careful about outsourcing your judgment on these topics
+                    entirely to social consensus.
+                </p>
+
+                <p>
+                    I also believe that building cheats, or even engaging in
+                    basic reverse engineering of games, can make you a better
+                    software engineer and a more capable systems thinker. This
+                    claim is based less on the act itself and more on the
+                    technical constraints it forces you to operate under.
+                </p>
+
+                <p>
+                    Everything you have ever built as a programmer is typically
+                    constructed from the inside out: systems designed with full
+                    knowledge of their structure and intended behavior. In
+                    contrast, reverse engineering forces you to work from the
+                    outside in—you must reconstruct internal behavior without
+                    access to its assumptions or design intent.
+                </p>
+
+                <p>
+                    This inversion develops a specific kind of systems thinking
+                    that is rarely exercised in traditional development. Rather
+                    than learning a narrow set of techniques, you develop a
+                    general intuition for how real systems behave in practice.
+                    You repeatedly confront the gap between how systems are
+                    described and how they actually function.
+                </p>
+
+                <p>
+                    Reverse engineering also removes documentation and intended
+                    usage patterns by definition. You are left with only
+                    observable behavior and low-level structure, and must build
+                    a working mental model from incomplete information. Over
+                    time, this strengthens your ability to infer structure from
+                    behavior, reason about unknown systems, and identify
+                    patterns in how complexity emerges.
+                </p>
+
+                <p>
+                    Ultimately, this is not just about games or cheating. It is
+                    about learning how to understand systems that you did not
+                    design, cannot fully see, and were never meant to interact
+                    with directly. That skill transfers far beyond any single
+                    domain, and becomes increasingly valuable as the systems you
+                    work with grow in complexity and opacity.
+                </p>
+            </div>
+        </main>
+    </body>
+</html>

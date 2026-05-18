@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>torben.sh</title>
+        <title>writing - torben.sh</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -17,23 +17,6 @@
             }
             .font-dm {
                 font-family: "DM Mono", monospace;
-            }
-            .tag {
-                font-family: "IBM Plex Mono", monospace;
-                font-size: 11px;
-                padding: 3px 12px;
-                border: 0.5px solid rgba(0, 0, 0, 0.12);
-                border-radius: 2px;
-                color: #6b6965;
-                letter-spacing: 0.04em;
-                transition:
-                    border-color 0.15s,
-                    color 0.15s;
-                cursor: default;
-            }
-            .tag:hover {
-                border-color: rgba(0, 0, 0, 0.28);
-                color: #1a1816;
             }
             .link-item {
                 font-family: "IBM Plex Mono", monospace;
@@ -75,59 +58,18 @@
             class="flex-1 flex flex-col justify-center px-10 md:px-20 lg:px-32 py-16 max-w-4xl w-full"
         >
             <div class="mb-12">
+                <a href="/" class="link-item mb-8 inline-flex">← torben.sh</a>
                 <h1
-                    class="font-dm font-light text-7xl md:text-8xl tracking-tight leading-none"
+                    class="font-dm font-light text-7xl md:text-8xl tracking-tight leading-none mt-8"
                 >
-                    torben
+                    writing
                 </h1>
-                <p class="text-[18px] text-[#a5a3a0] mt-3 tracking-wide">
-                    @ <span class="text-[#6b6965]">torben.sh</span>
-                </p>
             </div>
 
-            <div
-                class="flex items-center gap-3 text-[14px] underline text-[#1a1816] tracking-wide mb-16"
-            >
-                <span>software engineer</span>
-            </div>
+            <div class="border-t border-black/[0.07] mb-12"></div>
 
-            <div class="border-t border-black/[0.07] mb-16"></div>
-
-            <div class="mb-14">
-                <div class="flex flex-wrap gap-2">
-                    <span class="tag">mathematics</span>
-                    <span class="tag">go</span>
-                    <span class="tag">c++</span>
-                    <span class="tag">linux</span>
-                    <span class="tag">systems</span>
-                </div>
-            </div>
-
-            <div class="border-t border-black/[0.07] mb-10"></div>
-
-            <div class="mb-14">
-                <div class="flex items-baseline justify-between mb-6">
-                    <span
-                        class="text-[11px] text-[#a5a3a0] tracking-widest uppercase"
-                        >writing</span
-                    >
-                    <a href="/blog/" class="link-item">all posts</a>
-                </div>
-                <div id="recent-posts" class="flex flex-col gap-4">
-                    <!-- populated by script -->
-                </div>
-            </div>
-
-            <div class="border-t border-black/[0.07] mb-10"></div>
-
-            <div>
-                <div class="flex flex-wrap gap-6">
-                    <a href="https://github.com/torbenconto" class="link-item"
-                        >github</a
-                    >
-                    <a href="mailto:torben@torben.sh" class="link-item">mail</a>
-                    <a href="/blog/" class="link-item">writing</a>
-                </div>
+            <div id="all-posts" class="flex flex-col gap-5">
+                <!-- populated by script -->
             </div>
         </main>
 
@@ -135,8 +77,8 @@
             fetch("/posts.json")
                 .then((r) => r.json())
                 .then((posts) => {
-                    const container = document.getElementById("recent-posts");
-                    posts.slice(0, 3).forEach((post) => {
+                    const container = document.getElementById("all-posts");
+                    posts.forEach((post) => {
                         const row = document.createElement("div");
                         row.style.cssText =
                             "display:flex;align-items:baseline;justify-content:space-between";
