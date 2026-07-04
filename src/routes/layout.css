@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+@import '@fontsource-variable/fraunces/wght.css';
+@theme {
+	--color-bg: #fefdfb;
+	--color-bg-secondary: #f7f4ef;
+	--color-bg-tertiary: #f0ebe2;
+
+	--color-label: #4a4238;
+	--color-label-secondary: #948c7f;
+	--color-label-tertiary: #c2bbae;
+
+	--color-separator: #e8e2d7;
+	--color-separator-strong: #d8d0c2;
+
+	--color-signal: #d97a5f;
+	--color-signal-hover: #c2653f;
+	--color-link: #7a93a8;
+
+	--color-sage: #a3b399;
+	--color-lavender: #b3a9c9;
+	--color-butter: #e3c988;
+	--color-dustyblue: #9cb0bd;
+
+	--color-bg-dark: #211d18;
+	--color-bg-secondary-dark: #17140f;
+	--color-label-dark: #f5f1ea;
+	--color-label-secondary-dark: #a89f92;
+	--color-separator-dark: #3a352c;
+
+	--font-serif: 'Fraunces Variable', serif;
+	--radius-card: 1rem;
+	--radius-control: 0.625rem;
+}
