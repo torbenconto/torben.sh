@@ -26,7 +26,7 @@
 	</div>
 
 	<footer class="flex justify-between items-end text-sm text-label-secondary font-serif">
-		<span>Based in Georgia, United States</span>
+		<span>Based in Atlanta, GA</span>
 		<div class="flex gap-6">
 			<a href="mailto:torben@torben.sh" class="hover:text-signal transition-colors">Email</a>
 			<a href="https://github.com/torbenconto" class="hover:text-signal transition-colors">GitHub</a
